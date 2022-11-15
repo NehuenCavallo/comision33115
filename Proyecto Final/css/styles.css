@@ -1,0 +1,378 @@
+/*General*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 2px 2px #390503;
+    min-height: 100%;
+    background-image: url(../images/VHSnoise.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Grid*/
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "main main" 
+    "footer footer";
+}
+
+@media only screen and (min-widht:768px){
+    .grid-container {
+        grid-template:
+        "head head" 50px
+        "main main" auto
+        "footer footer" 50px ;
+    }
+}
+
+/*Header e Index*/
+.header {
+    grid-area: head;
+    position: fixed;
+    background-color: black;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+/*.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 1rem;
+}*/
+
+.nave {
+    background-color: black !important;
+}
+
+.logo {
+    width: 6.25rem;
+    height: 5rem;
+    padding: 10px 10px;
+}
+
+.color {
+    color: white !important;
+}
+
+.navhov:hover {
+    transform: scale(1.2);
+    color: #1C4F60 !important;
+}
+
+.main {
+    grid-area: main;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 4rem;
+    margin: 18rem 4rem 16rem 4rem;
+}
+
+.sect-pos1 {
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+    background-color: #070216;
+    width: 100%;
+    position: relative;
+}
+
+.img-pos1 {
+    position: absolute;
+    top: 8%;
+    left: 55%;
+}
+
+.sect-p1 {
+    font-size: 2.5rem;
+    text-align: justify;
+    padding: 3rem 5rem 3rem 5rem;
+    margin-right: 50%;
+}
+
+.sect-pos2 {
+    margin-top: 16rem;
+    margin-bottom: 10rem;
+}
+
+.sect-p2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.sect-p2-link {
+    font-size: 3rem;
+    color: #390503;
+    text-shadow: 2px 2px #070216;
+}
+
+.sect-p2-link:hover {
+    color: #1C4F60 !important;
+}
+
+/*Contacto*/
+.form {
+    background-image: url(../images/3EQO.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8rem;
+    margin-bottom: 3.1rem;
+    margin-left: 30.4%;
+    width: 31.25rem;
+}
+
+.form-text {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    margin: 1rem;
+}
+
+.form-divs {
+    margin-left: 0.75rem;
+    margin-bottom: 0.62rem;
+}
+.form-input {
+    margin-left: 1rem;
+}
+
+.form-buttons {
+    background: #390503;
+    color: white;
+    text-shadow: 2px 2px #070216;
+    font-family: 'Roboto', sans-serif;
+    width: 75%;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px #070216;
+    margin-top: 0.62rem;
+    margin-bottom: 1.25rem;
+    margin-left: 4.1rem;
+    padding: 0.62rem;
+}
+
+.buthov:hover {
+    transform: scale(1.1);
+}
+
+.mensaje {
+    resize: none;
+    height: 150px;
+    max-width: 100%;
+    min-width: 95%;
+    margin-top: 0.62rem;
+    margin-left: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Historia*/
+.title-doc2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+
+.bloque {
+    background-color: #070216;
+    margin: 3rem 4rem;
+    padding: 1.8rem 3.1rem;
+    border-radius: 0.62rem;
+    box-shadow: 1px 2px #390503;
+}
+
+.bloque-p {
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+.bloque-p1 {
+    margin-left: 1rem;
+    padding-right: 1rem;
+    text-align: justify;
+}
+
+.bloque-p2 {
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+.img-text-flex {
+    display: flex;
+    margin: 1rem;
+}
+
+.bloque-img {
+    width: 20.3rem;
+    height: 12.5rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px #390503;
+}
+
+.bloque-img2 {
+    display: none;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    top: 100px;
+    bottom: 100px;
+}
+
+/*Momentos del Rock*/
+.title-puntos {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+
+.woodstock {
+    display: flex;
+    background-color: #070216;
+    border-radius: 10px;
+    margin: 3.3rem 3.3rem;
+    padding: 1.25rem 1.25rem;
+}
+
+.woodstock-img {
+    box-shadow: 2px 2px #390503;
+    border-radius: 10px;
+    margin-right: 1.25rem;
+    width: 31.25rem;
+    height: 15.6rem;
+}
+
+.woodstock-text {
+    text-align: justify;
+    padding-top: 3.4rem;
+}
+
+.liveaid {
+    display: flex;
+    background-color: #0D1C21;
+    border-radius: 10px;
+    margin: 3.3rem 3.3rem;
+    padding: 1.25rem 1.25rem;
+}
+
+.liveaid-img {
+    box-shadow: 2px 2px #390503;
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 500px;
+    height: 250px;
+}
+
+.liveaid-text {
+    text-align: justify;
+    padding-top: 35px;
+    padding-right: 20px;
+}
+
+/*Playlist*/
+.title-mus {
+    font-size: 4rem;
+    margin-top: 18rem;
+    margin-bottom: 20rem;
+    text-align: center;
+}
+
+.playlist {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.playlist-spec {
+    font-size: 2rem;
+    text-align: center;
+    background-image: url(../images/3EQO.gif);
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 40px 40px 30px 20px;
+}
+
+.playlist-link {
+    margin-right: 40px;
+}
+
+.playlist-spec2 {
+    font-size: 2rem;
+    text-align: center;
+    background-image: url(../images/3EQO.gif);
+    margin-right: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 40px 30px 30px 20px;
+}
+
+.playlist-link2 {
+    margin-left: 40px;
+}
+
+.last-words {
+    background-color: #070216;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.last-words-link {
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    color: #390503;
+    text-shadow: 2px 2px #070216;
+}
+
+.last-words-link:hover {
+    color: #1C4F60 !important;
+}
+
+/*footer*/
+.grid-footer {
+    grid-area: footer;
+}
+
+footer {
+    text-align: center;
+    bottom: 0%;
+}
