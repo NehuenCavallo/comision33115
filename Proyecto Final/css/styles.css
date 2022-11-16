@@ -44,14 +44,52 @@ ul {
     "footer footer";
 }
 
-@media only screen and (min-widht:768px){
+/*mobile*/
+@media only screen and (max-widht:480px){
     .grid-container {
         grid-template:
         "head head" 50px
         "main main" auto
         "footer footer" 50px ;
     }
+
+    body {
+        width: 100%;
+        height: 400px;
+        background-image: url(../images/VHSnoise.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    /*Nav*/
+    .logo {
+        width: 100%;
+        height: auto;
+        padding: 10px 10px;
+    }
+
+    /*Inicio*/
+    .header-title {
+        text-align: center;
+        font-size: 10px;
+        margin: 7rem 2rem 7rem 2rem;
+    }
+
+    .img-pos1 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sect-pos1 {
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+        background-color: #070216;
+        width: 100%;
+    }
 }
+
+
 
 /*Header e Index*/
 .header {
@@ -63,13 +101,9 @@ ul {
     z-index: 1;
 }
 
-/*.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1.5rem 1rem;
-}*/
+.button-design {
+    color: white !important;
+}
 
 .nave {
     background-color: black !important;
@@ -101,24 +135,24 @@ ul {
 }
 
 .sect-pos1 {
+    display: flex;
     margin-top: 16rem;
     margin-bottom: 16rem;
     background-color: #070216;
     width: 100%;
-    position: relative;
 }
 
 .img-pos1 {
-    position: absolute;
-    top: 8%;
-    left: 55%;
+    width: 187.5rem;
+    height: 31.25rem;
+    padding: 3rem;
+    padding-right: 7rem;
 }
 
 .sect-p1 {
     font-size: 2.5rem;
     text-align: justify;
-    padding: 3rem 5rem 3rem 5rem;
-    margin-right: 50%;
+    padding: 4rem 7rem 3rem 7rem;
 }
 
 .sect-pos2 {
@@ -330,6 +364,10 @@ ul {
     margin-right: 40px;
 }
 
+.playlist-link-compact {
+    display: none;
+}
+
 .playlist-spec2 {
     font-size: 2rem;
     text-align: center;
@@ -342,6 +380,10 @@ ul {
 
 .playlist-link2 {
     margin-left: 40px;
+}
+
+.playlist-link-compact2 {
+    display: none;
 }
 
 .last-words {
@@ -370,9 +412,8 @@ ul {
 /*footer*/
 .grid-footer {
     grid-area: footer;
-}
-
-footer {
     text-align: center;
     bottom: 0%;
+    width: 100%;
 }
+
